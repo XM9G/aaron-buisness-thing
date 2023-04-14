@@ -86,22 +86,25 @@
       .buton {
            margin: 0;
             position: absolute;
-             top: 100%;
+             top: 50%;
             left: 50%;
              -ms-transform: translate(-50%, -50%);
              transform: translate(-50%, -50%);
 }
+
+iframe {
+    
+}
 </style>
 
 <body>
-    <h1>Welcome to Noders Anonymous</h1>
-    <p>Here at noders anonmous we ask the question: Do it node?</p>
-    <img src="images/node asker.jpeg" style="width: 500px;margin-left: 35%;">
-    <p>here is a picture of me asking Do it node?</p>
-    <div class=buton id="myButton"><button class="button" style="vertical-align:middle"><span>Join Noders Anonymous </span></button></div>
+    <h1>Please complete this Google Form</h1>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfbwfmOZBaEsWkKcZ1mjoxoqLpv-CWLlcPFe-wVu4Xp3Ic8Gw/viewform?embedded=true" width="640" height="551" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>    <div class=buton id="myButton"><button class="button" style="vertical-align:middle"><span>When your done click here</span></button></div>
     <script type="text/javascript">
         document.getElementById("myButton").onclick = function () {
-            location.href = "node-intrest.htm";
+            alert("We will review your submission")
+            setTimeout(1)
+            location.href = "index.html";
         };
     </script>
 
