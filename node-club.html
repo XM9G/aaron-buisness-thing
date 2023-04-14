@@ -6,6 +6,9 @@
     <meta property="og:title" content="Noders Anonymous" />
     <meta name="coinzilla" content="ef8598d2e0f760aea650b8727ab36c72" />
     <script src="/js/prebid-ads.js"></script>
+    <link rel="stylesheet" href="nodebutton.css">
+
+
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5NP9EKVR2F"></script>
@@ -39,6 +42,55 @@
         text-decoration: underline;
     }
     
+    .button {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #f4511e;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 300px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        
+     }
+  
+  .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+  
+    .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+  
+  .button:hover span {
+        padding-right: 25px;
+      }
+  
+  .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+      .buton {
+           margin: 0;
+            position: absolute;
+             top: 100%;
+            left: 50%;
+             -ms-transform: translate(-50%, -50%);
+             transform: translate(-50%, -50%);
+}
 </style>
 
 <body>
@@ -46,4 +98,11 @@
     <p>Here at noders anonmous we ask the question: Do it node?</p>
     <img src="images/node asker.jpeg" style="width: 500px;margin-left: 35%;">
     <p>here is a picture of me asking Do it node?</p>
+    <div class=buton id="myButton"><button class="button" style="vertical-align:middle"><span>Join Noders Anonymous </span></button></div>
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "https://1111111111111111111111111111111111111.netlify.app";
+        };
+    </script>
+
 </body>
